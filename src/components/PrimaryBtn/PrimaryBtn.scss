@@ -1,0 +1,19 @@
+.primary-btn {
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: #8670ef;
+  color: #fff;
+  border: 1px solid transparent;
+  text-align: center;
+  font-family: "Mulisher", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  transition: .3s;
+  &:hover {
+    color: #000;
+    background-color: #FAD764;
+    border: 1px solid #FAD764;
+  }
+}
