@@ -4,9 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: var(--bg-color);
-  overflow: hidden;
 }
 .container {
   max-width: 1436px;
@@ -16,6 +15,10 @@ body{
 a {
   text-decoration: none;
   color: #000;
+}
+main {
+  padding-top: 107px;
+  overflow: hidden;
 }
 li,
 button,

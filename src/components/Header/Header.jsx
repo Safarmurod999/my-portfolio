@@ -3,12 +3,14 @@ import './Header.scss'
 import { PrimaryBtn, Dropdown } from '../index';
 import { BsSun } from "react-icons/bs";
 import { ModeContext } from '../../context/ModeContext';
+import { Link } from 'react-router-dom';
 function Header() {
   let [open1, setOpen1] = useState(false);
   let [open2, setOpen2] = useState(false);
   let [open3, setOpen3] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { mode, setColorMode } = useContext(ModeContext);
+  let url = window.location.href;
   let html = document.querySelector("html");
   localStorage.setItem("colorMode", mode ? "light" : "dark");
   html.setAttribute("data-theme", mode ? "light" : "dark");
@@ -36,6 +38,9 @@ function Header() {
       };
     }
   }, [lastScrollY]);
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [url])
   return (
     <header>
       <nav className={`navbar ${!show && "shrink"}`}>
@@ -43,21 +48,23 @@ function Header() {
           <div className="navbar__logo">Urinov<span>.</span></div>
           <div className={`navbar__menu ${menuOpen ? "open" : ""}`}>
             <ul className="navbar__list">
-              <li className="navbar__list--item">Home</li>
+              <li className="navbar__list--item"><Link to={'/'}>Home</Link></li>
               <li className="navbar__list--item"
                 onMouseEnter={() => setOpen1(true)}
-                onMouseLeave={() => setOpen1(false)}>Services <i className="fa-solid fa-caret-down"></i>
-                <Dropdown array={['All Services', 'Service Details']} open={open1} /></li>
-              <li className="navbar__list--item">About Me</li>
+                onMouseLeave={() => setOpen1(false)}><Link to={'/services'}>Services
+                  <i className="fa-solid fa-caret-down"></i>
+                  <Dropdown array={['All Services', 'Service Details']} open={open1} /></Link></li>
+              <li className="navbar__list--item"><Link to={'/about'}>About Me</Link></li>
               <li className="navbar__list--item"
                 onMouseEnter={() => setOpen2(true)}
-                onMouseLeave={() => setOpen2(false)}>Portfolio<i className="fa-solid fa-caret-down"></i>
-                <Dropdown array={['All Portfolio', 'Portfolio Details']} open={open2} /></li>
-              <li className="navbar__list--item">Reviews</li>
+                onMouseLeave={() => setOpen2(false)}><Link to={'/portfolio'}>Portfolio
+                  <i className="fa-solid fa-caret-down"></i>
+                  <Dropdown array={['All Portfolio', 'Portfolio Details']} open={open2} /></Link></li>
+              <li className="navbar__list--item"><Link to={'/reviews'}>Reviews</Link></li>
               <li className="navbar__list--item"
                 onMouseEnter={() => setOpen3(true)}
-                onMouseLeave={() => setOpen3(false)}>Blog<i className="fa-solid fa-caret-down"></i>
-                <Dropdown array={['Blog Standard', 'All Blogs', 'Blog Details']} open={open3} /></li>
+                onMouseLeave={() => setOpen3(false)}><Link to={'/blog'}>Blog<i className="fa-solid fa-caret-down"></i>
+                  <Dropdown array={['Blog Standard', 'All Blogs', 'Blog Details']} open={open3} /></Link></li>
             </ul>
             <div className="navbar__right">
               <button className='color-mode' onClick={() => handleColorMode()}>
