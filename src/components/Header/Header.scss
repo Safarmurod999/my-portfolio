@@ -4,6 +4,7 @@
   z-index: 1000;
   padding: 25px 0;
   background-color: var(--bg-color);
+  transition: .3s;
   .container {
     display: flex;
     flex-direction: row;
