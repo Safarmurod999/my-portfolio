@@ -1,4 +1,7 @@
 .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   padding: 25px 0;
   background-color: var(--bg-color);
   .container {
@@ -6,6 +9,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 230px;
+    @media screen and (max-width:1310px) {
+      gap: 100px;
+    }
+    @media screen and (max-width:1170px) {
+      gap: 50px;
+    }
+    @media screen and (max-width:1130px) {
+      gap: 0px;
+    }
   }
   &__logo {
     font-size: 40px;
@@ -18,9 +31,9 @@
   }
   &__menu {
     display: flex;
-    flex-grow: 0.6;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
     @media screen and (max-width: 1090px) {
       position: absolute;
       top: 98px;
