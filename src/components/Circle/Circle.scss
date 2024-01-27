@@ -1,0 +1,79 @@
+@mixin size($mh: auto, $mw: auto) {
+  min-height: $mh;
+  min-width: $mw;
+  max-height: $mh;
+  max-width: $mw;
+}
+@mixin border($w: 4px, $c: var(--color-3), $r: 0) {
+  border: $w solid $c;
+  border-radius: $r;
+}
+@mixin flex($ai: center, $jc: center, $fd: row, $gap: 0) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+}
+.circle {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  @include size(180px, 180px);
+  @include border(1px, var(--white), 50%);
+
+  &__wrapper {
+    position: absolute;
+    @include size(180px, 180px);
+    @include flex;
+    animation: rotator 7s linear infinite;
+  }
+  --white: #fff;
+  transition: transform 0.35s ease-in-out;
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    color: var(--white);
+    font-size: 24px;
+    background-color: var(--primary-color);
+    @include size(80px, 80px);
+    border-radius: 50%;
+    @include flex;
+    svg {
+      color: #fff;
+    }
+    i {
+      transition: 0.25s;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 10.5px;
+    transform: translateY(-50%);
+    @include size(100px, 100px);
+    @include flex;
+    span {
+      position: absolute;
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: "Mulish", sans-serif;
+      transform-origin: 0 80px;
+    }
+  }
+}
+@keyframes rotator {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

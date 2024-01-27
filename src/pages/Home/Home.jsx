@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { PrimaryBtn, Typography } from '../../components/index'
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
@@ -7,12 +7,14 @@ import { FaInstagram } from "react-icons/fa";
 import me from "../../assets/images/Home/me.png"
 import './Home.scss'
 import { Link } from 'react-router-dom'
+import Circle from '../../components/Circle/Circle';
+import Resume from '../../assets/files/SafarmurodUrinov.pdf';
 function Home() {
   return (
     <section className="home">
       <div className="container">
         <div className="home__left">
-          <h1 className="home__title">Hay’ i m
+          <h1 className="home__title">Hello I’ m
             Safarmurod</h1>
           <Typography maxWidth={'582px'}>I’m a Web developer & I’m very passionate and dedicated to my work. I have
             acquired the skills and knowledge necessary to make your project a success.</Typography>
@@ -23,18 +25,19 @@ function Home() {
           <div className='home__social'>
             <p>Follow Me</p>
             <ul className="home__links">
-            <li><a href=""><FaTelegramPlane /></a></li>
-            <li><a href=""><FaFacebookF /></a></li>
-            <li><a href=""><FaGithubAlt /></a></li>
-            <li><a href=""><FaInstagram /></a></li>
-          </ul>
+              <li><a href=""><FaTelegramPlane /></a></li>
+              <li><a href=""><FaFacebookF /></a></li>
+              <li><a href=""><FaGithubAlt /></a></li>
+              <li><a href=""><FaInstagram /></a></li>
+            </ul>
           </div>
         </div>
         <div className="home__right">
           <img src={me} alt="My picture" />
+          <div className="circular"><Circle text={"Download - Resume - CV"} link={Resume} id={'third'} /></div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   )
 }
 
