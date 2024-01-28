@@ -5,7 +5,7 @@ import { services } from '../../const/data';
 function Services() {
   return (
     <>
-      <section className="services">
+      <section className="service">
         <div className="container">
           <ServiceWrapper array={services}/>
         </div>
