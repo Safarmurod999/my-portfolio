@@ -1,7 +1,7 @@
 import React from 'react'
 import './ServiceWrapper'
 import ServiceCard from '../ServiceCard/ServiceCard'
-function ServiceWrapper({array}) {
+function ServiceWrapper({array,style}) {
     return (
         <ul className='service-wrapper'>{
             array.map((service,index)=> (
