@@ -227,12 +227,20 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      &:nth-child(9) {
-        grid-area: 3 / 2 / 4 / 3;
+
+      @media screen and (max-width: 470px) {
+        &:nth-child(9) {
+          grid-area: 3 / 2 / 4 / 3;
+        }
+        &:last-child {
+          grid-area: 3 / 3 / 4 / 4;
+          @media screen and (max-width: 340px) {
+            grid-area: 4 / 2 / 5 / 3;
+          }
+        }
       }
-      &:last-child {
-        grid-area: 3 / 3 / 4 / 4;
-        @media screen and (max-width: 340px) {
+      @media screen and (max-width: 340px) {
+        &:last-child {
           grid-area: 4 / 2 / 5 / 3;
         }
       }
