@@ -5,3 +5,7 @@ export { default as Footer } from "./Footer/Footer";
 export { default as Spinner } from "./Spinner/Spinner";
 export { default as Layout } from "./Layout/Layout";
 export { default as Typography } from "./Typography/Typography";
+export { default as SecondaryBtn } from "./SecondaryBtn/SecondaryBtn";
+export { default as Title } from "./Title/Title";
+export { default as TopTitle } from "./TopTitle/TopTitle";
+export { default as ServiceWrapper } from "./ServiceWrapper/ServiceWrapper";

@@ -28,6 +28,7 @@ function Header() {
   };
   const handleColorMode = () => {
     setColorMode(!mode);
+    setMenuOpen(false);
     localStorage.setItem("colorMode", mode ? "light" : "dark");
   };
   useEffect(() => {

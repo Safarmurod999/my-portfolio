@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-2);
   scroll-behavior: smooth;
 }
 .container {
@@ -37,16 +38,7 @@ textarea {
 ul {
   list-style-type: none;
 }
-.text-ring {
-  position: relative;
-}
-.text-ring [style*=--index] {
-  font-size: calc(var(--font-size, 2) * 1rem);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:
-    translate(-50%, -50%)
-    rotate(calc(360deg / var(--total) * var(--index)))
-    translateY(calc(var(--radius, 5) * -1ch));
+
+.mf-cursor{
+color: var(--secondary-color);
 }
