@@ -1,6 +1,7 @@
 import React from 'react'
 import './ServiceCard.scss'
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from 'react-router-dom';
 
 function ServiceCard({ id, title, description, image }) {
     return (
@@ -12,7 +13,7 @@ function ServiceCard({ id, title, description, image }) {
                     <p>{description}</p>
                 </div>
             </div>
-            <div className='service-card-icon'><GoArrowUpRight /></div>
+            <Link to={'/services'} className='service-card-icon'><GoArrowUpRight /></Link>
         </li>
     )
 }

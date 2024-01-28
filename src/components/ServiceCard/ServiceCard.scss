@@ -7,25 +7,38 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 40px;
   margin-bottom: 50px;
-  &:hover{
-    .service-card-icon{
-        background-color: var(--secondary-color);
+  &:hover {
+    .service-card-icon {
+      background-color: var(--secondary-color);
     }
   }
   div {
     display: flex;
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
   }
   &-content {
     flex-direction: column;
     margin-inline: 30px;
+    @media screen and (max-width: 400px) {
+      margin-inline: 0px;
+    }
   }
   h4 {
     color: var(--primary-color);
-    font-family: Syne;
+    font-family: "Syne", sans-serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: 45px; /* 132.353% */
+    @media screen and (max-width: 530px) {
+      font-size: 24px;
+      line-height: 35px;
+    }
+    @media screen and (max-width: 400px) {
+      margin-bottom: 20px;
+    }
   }
   span {
     color: #666;
@@ -44,14 +57,29 @@
     font-style: normal;
     font-weight: 700;
     line-height: 42px; /* 131.25% */
+    @media screen and (max-width: 530px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
-  &-icon{
+  &-icon {
     padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    background-color:#fff;
-    transition: .3s;
+    background-color: #fff;
+    transition: 0.3s;
   }
-  svg{
+  svg {
     font-size: 21px;
   }
 }
