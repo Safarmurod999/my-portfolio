@@ -1,4 +1,7 @@
-.service-wrapper{
-    width: 100%;
-    max-width: 100%;
+.service-wrapper {
+  width: 100%;
+  max-width: 100%;
+  .service-card:last-child {
+    margin-bottom: 0;
+  }
 }
