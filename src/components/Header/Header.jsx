@@ -13,7 +13,7 @@ function Header() {
   let url = window.location.href;
   let html = document.querySelector("html");
   localStorage.setItem("colorMode", mode ? "light" : "dark");
-  html.setAttribute("data-theme", mode ? "light" : "dark");
+  html.setAttribute("data-theme", localStorage.getItem("colorMode"));
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const controlNavbar = () => {
