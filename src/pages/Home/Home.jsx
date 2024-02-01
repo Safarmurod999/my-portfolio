@@ -4,7 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import me from "../../assets/images/Home/me.png"
+import me from "../../assets/images/Home/me-3.png"
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import Circle from '../../components/Circle/Circle';
@@ -36,7 +36,7 @@ function Home() {
           </div>
           <div className="home__image">
             <img src={me} alt="My picture" />
-            <div className="circular"><Circle text={"Download - Resume - CV"} link={Resume} id={'third'} /></div>
+            <div className="circular"><Circle text={"Download - CV Download - CV "} link={Resume} id={'third'} /></div>
           </div>
         </div >
       </section >

@@ -28,7 +28,7 @@
     position: absolute;
     @include size(180px, 180px);
     @include flex;
-    animation: rotator 7s linear infinite;
+    // animation: rotator 7s linear infinite;
   }
   --white: #fff;
   transition: transform 0.35s ease-in-out;
@@ -56,17 +56,19 @@
     position: absolute;
     top: 10.5px;
     transform: translateY(-50%);
-    @include size(100px, 100px);
     @include flex;
-    span {
+    p {
       position: absolute;
+      display: inline-block;
       color: var(--white);
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       text-transform: uppercase;
       font-family: "Mulish", sans-serif;
-      transform-origin: 0 80px;
     }
+  }
+  &__inner{
+    position: relative;
   }
 }
 @keyframes rotator {

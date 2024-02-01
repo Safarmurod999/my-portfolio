@@ -1,20 +1,17 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
 import { RiDownloadLine } from "react-icons/ri";
 import "./Circle.scss"
 function Circle({ text, link, id }) {
     useEffect(() => {
         let el = document.getElementById(id);
-        let text = el.querySelector("p");
-        let deg = 360 / 40;
-        let origin =0;
-        text.innerHTML = text.innerText
-            .split("")
-            .map((char, i) => {
-                origin +=deg;
-                return `<span style="transform:rotate(${origin}deg)">${char}</span>`;
-            })
-            .join(" ");
+        let texture = el.querySelector(".circle__inner");
+        let deg = 360 / text.length;
+        let origin = 0;
+        text.split("").forEach((ea) => {
+            ea = `<p style='height:${80}px;transform:rotate(${Math.round(origin)}deg);transform-origin:0 100%'>${ea}</p>`;
+            texture.innerHTML += ea;
+            origin += deg;
+        });
     })
     return (
         <a className='circle' href={link} download="SafarmurodUrinov"
@@ -23,7 +20,7 @@ function Circle({ text, link, id }) {
         >
             <div className="circle__wrapper">
                 <div className="circle__text" id={id}>
-                    <p>{text}</p>
+                    <div className='circle__inner'></div>
                 </div>
             </div>
             <div className="circle__logo">
