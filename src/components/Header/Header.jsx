@@ -68,13 +68,13 @@ function Header() {
                   <Dropdown array={['Blog Standard', 'All Blogs', 'Blog Details']} open={open3} /></Link></li>
             </ul>
             <div className="navbar__right">
-              <button className='color-mode' onClick={() => handleColorMode()}>
+              <button aria-label='color-mode' className='color-mode' onClick={() => handleColorMode()}>
                 <BsSun />
               </button>
               <PrimaryBtn text={"Contact Me"} />
             </div>
           </div>
-          <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+          <button aria-label='menu' className="burger" onClick={() => setMenuOpen(!menuOpen)}>
             {" "}
             {!menuOpen ? (
               <i className="fa-solid fa-bars"></i>
