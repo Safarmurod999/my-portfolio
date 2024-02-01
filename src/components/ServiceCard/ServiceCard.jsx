@@ -13,7 +13,7 @@ function ServiceCard({ id, title, description, image }) {
                     <p>{description}</p>
                 </div>
             </div>
-            <Link to={'/services'} className='service-card-icon'><GoArrowUpRight /></Link>
+            <Link aria-label='page-link' to={'/services'} className='service-card-icon'><GoArrowUpRight /></Link>
         </li>
     )
 }

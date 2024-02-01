@@ -14,7 +14,7 @@ function Circle({ text, link, id }) {
         });
     })
     return (
-        <a className='circle' href={link} download="SafarmurodUrinov"
+        <a aria-label='download' className='circle' href={link} download="SafarmurodUrinov"
             target="_blank"
             rel="noopener noreferrer"
         >
