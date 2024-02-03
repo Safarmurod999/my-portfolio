@@ -13,7 +13,7 @@ import { services, skills, education, experience, projects } from '../../const/d
 function Home() {
   return (
     <>
-      <section className="home">
+      <section id='home' className="home">
         <div className="container">
           <div className="home__content">
             <h1 className="home__title">Hello I’ m
@@ -21,16 +21,16 @@ function Home() {
             <Typography maxWidth={'582px'}>I’m a Web developer & I’m very passionate and dedicated to my work. I have
               acquired the skills and knowledge necessary to make your project a success.</Typography>
             <div className="home__btns">
-              <Link aria-label='about-page' to={'/about'}><PrimaryBtn text={'About Me'} /></Link>
-              <Link aria-label='portfolio-page' to={'/portfolio'} className='home__btn'>My Works</Link>
+              <Link aria-label='about-page' to={'#about'}><PrimaryBtn text={'About Me'} /></Link>
+              <Link aria-label='portfolio-page' to={'#portfolio'} className='home__btn'>My Works</Link>
             </div>
             <div className='home__social'>
               <p>Follow Me</p>
               <ul className="home__links">
-                <li><a href=""><FaTelegramPlane /></a></li>
-                <li><a href=""><FaFacebookF /></a></li>
-                <li><a href=""><FaGithubAlt /></a></li>
-                <li><a href=""><FaInstagram /></a></li>
+                <li><a href="https://t.me/UrinovSafarmurod" target='blank'><FaTelegramPlane /></a></li>
+                <li><a href="https://www.facebook.com/safarmurodurinov"><FaFacebookF /></a></li>
+                <li><a href="https://www.github.com/Safarmurod999"><FaGithubAlt /></a></li>
+                <li><a href="https://www.instagram.com/safarmurod0904"><FaInstagram /></a></li>
               </ul>
             </div>
           </div>
@@ -40,7 +40,7 @@ function Home() {
           </div>
         </div >
       </section >
-      <section className="services">
+      <section id='services' className="services">
         <div className="container">
           <div className="services__content">
             <TopTitle>Services</TopTitle>
@@ -55,7 +55,7 @@ function Home() {
         </div>
 
       </section>
-      <section className="about">
+      <section id='about' className="about">
         <div className="container">
           <div className="about__content">
             <TopTitle>I am a web developer</TopTitle>
@@ -94,7 +94,7 @@ function Home() {
           <DetailsWrapper array={experience} title={"Experience"} />
         </div>
       </section>
-      <section className="projects">
+      <section id='portfolio' className="projects">
         <div className="container">
           <div className="projects__title">
             <TopTitle>My Works Portfolio</TopTitle>
