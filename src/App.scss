@@ -8,6 +8,7 @@
 body {
   background-color: var(--bg-color-2);
   scroll-behavior: smooth;
+
 }
 .container {
   max-width: 1436px;
@@ -21,6 +22,9 @@ a {
 main {
   padding-top: 107px;
   overflow: hidden;
+}
+section{
+  transition: .3s;
 }
 li,
 button,

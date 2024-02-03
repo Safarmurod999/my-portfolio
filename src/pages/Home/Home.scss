@@ -125,6 +125,7 @@
 .services {
   padding: 100px 0;
   background-color: var(--bg-color);
+  transition: none;
   .typography {
     margin-bottom: 50px;
   }
@@ -290,5 +291,26 @@
         }
       }
     }
+  }
+}
+.details{
+  padding: 30px 0 100px;
+  .container{
+    display: flex;
+    gap: 65px;
+    @media screen and (max-width:960px) {
+      gap: 35px;
+    }
+    @media screen and (max-width:630px) {
+      flex-direction: column;
+    }
+  }
+}
+.projects {
+  padding: 100px 0;
+  background-color: var(--bg-color);
+  transition: none;
+  &__title{
+    text-align: center;
   }
 }

@@ -9,3 +9,5 @@ export { default as SecondaryBtn } from "./SecondaryBtn/SecondaryBtn";
 export { default as Title } from "./Title/Title";
 export { default as TopTitle } from "./TopTitle/TopTitle";
 export { default as ServiceWrapper } from "./ServiceWrapper/ServiceWrapper";
+export { default as DetailsWrapper } from "./DetailsWrapper/DetailsWrapper";
+export { default as ProjectsWrapper } from "./ProjectsWrapper/ProjectsWrapper";

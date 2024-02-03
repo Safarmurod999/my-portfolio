@@ -1,5 +1,5 @@
 import React from 'react'
-import { PrimaryBtn, SecondaryBtn, ServiceWrapper, Title, TopTitle, Typography } from '../../components/index'
+import { DetailsWrapper, PrimaryBtn, ProjectsWrapper, SecondaryBtn, ServiceWrapper, Title, TopTitle, Typography } from '../../components/index'
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGithubAlt } from "react-icons/fa6";
@@ -9,7 +9,7 @@ import './Home.scss'
 import { Link } from 'react-router-dom'
 import Circle from '../../components/Circle/Circle';
 import Resume from '../../assets/files/SafarmurodUrinov.pdf';
-import { services, skills } from '../../const/data';
+import { services, skills, education, experience, projects } from '../../const/data';
 function Home() {
   return (
     <>
@@ -61,7 +61,7 @@ function Home() {
             <TopTitle>I am a web developer</TopTitle>
             <Title>About Me</Title>
             <Typography maxWidth={'581px'} color={'var(--text-light-color)'} fontWeight='400'>
-              My name is Hevin. I have been studying UI UX Design since October 2020. I like
+              My name is Safarmurod. I have been studying UI UX Design since October 2020. I like
               creating a cool design project.
             </Typography>
             <Typography maxWidth={'630px'} color={'var(--text-light-color)'} fontWeight='400'>
@@ -86,6 +86,21 @@ function Home() {
               }
             </ul>
           </div>
+        </div>
+      </section>
+      <section className="details">
+        <div className="container">
+          <DetailsWrapper array={education} title={"Education"} />
+          <DetailsWrapper array={experience} title={"Experience"} />
+        </div>
+      </section>
+      <section className="projects">
+        <div className="container">
+          <div className="projects__title">
+            <TopTitle>My Works Portfolio</TopTitle>
+            <Title>My Projects</Title>
+          </div>
+          <ProjectsWrapper array={projects}/>
         </div>
       </section>
     </>
