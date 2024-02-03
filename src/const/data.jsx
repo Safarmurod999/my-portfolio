@@ -1,6 +1,6 @@
 import meelonuz from "../assets/images/Projects/meelonuz.png";
 import nisauikit from "../assets/images/Projects/nisauikit.png";
-import bobrovclinic from "../assets/images/Projects/bobrovclinic.png";
+import najottalim from "../assets/images/Projects/najottalim.png";
 import consultation from "../assets/images/Projects/100yuristov.png";
 export const services = [
   {
@@ -132,20 +132,20 @@ export const projects = [
     image: nisauikit,
     title: "Frontend programming",
     data: "Nisa UI Kit",
-    url: "https://nisa-ui-kit.netlify.app/",
+    url: "https://nisa-ui-kit.netlify.app",
   },
   {
     id: 2,
-    image: bobrovclinic,
+    image: najottalim,
     title: "Frontend programming",
-    data: "Bobrov clinic",
-    url: "https://bobrov-clinic.ru/",
+    data: "Najot Ta'lim Clone",
+    url: "https://front-end-sm.netlify.app",
   },
   {
     id: 3,
     image: consultation,
     title: "Frontend programming",
     data: "100 Yuristov",
-    url: "https://online-consultation-sun.netlify.app/",
+    url: "https://online-consultation-sun.netlify.app",
   },
 ];
