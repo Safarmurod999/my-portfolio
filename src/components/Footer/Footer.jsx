@@ -100,6 +100,10 @@ const Footer = () => {
                             Send Message</button>
                     </form>
                 </div>
+
+            </div>
+            <div className="footer__bottom">
+                <span>&copy;</span> 2024 S.Urinov All Rights Reserved
             </div>
         </footer>
     )

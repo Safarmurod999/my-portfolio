@@ -120,6 +120,9 @@
       font-weight: 600;
       font-family: "Syne", sans-serif;
     }
+    @media screen and (max-width: 445px) {
+      flex-direction: column;
+    }
   }
 }
 .services {

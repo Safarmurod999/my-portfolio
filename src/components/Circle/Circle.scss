@@ -23,7 +23,9 @@
   backdrop-filter: blur(10px);
   @include size(180px, 180px);
   @include border(1px, var(--white), 50%);
-
+  @media screen and (max-width: 410px) {
+    bottom: 30px;
+  }
   &__wrapper {
     position: absolute;
     @include size(180px, 180px);
