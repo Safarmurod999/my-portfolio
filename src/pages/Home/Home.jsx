@@ -4,6 +4,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import me from "../../assets/images/Home/me-3.png"
 import './Home.scss'
 import { Link } from 'react-router-dom'
@@ -31,6 +33,7 @@ function Home() {
                 <li><a href="https://www.facebook.com/safarmurodurinov"><FaFacebookF /></a></li>
                 <li><a href="https://www.github.com/Safarmurod999"><FaGithubAlt /></a></li>
                 <li><a href="https://www.instagram.com/safarmurod0904"><FaInstagram /></a></li>
+                <li><a href="https://www.linkedin.com/in/safarmurod999/"><FaLinkedinIn /></a></li>
               </ul>
             </div>
           </div>
