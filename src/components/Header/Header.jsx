@@ -52,24 +52,24 @@ function Header() {
               <li className="navbar__list--item"><Link aria-label='home' to={'/'}>Home</Link></li>
               <li className="navbar__list--item"
                 onMouseEnter={() => setOpen1(true)}
-                onMouseLeave={() => setOpen1(false)}><Link aria-label='services' to={'#services'}>Services
+                onMouseLeave={() => setOpen1(false)}><Link aria-label='services' to={'/services'}>Services
                   {/* <i className="fa-solid fa-caret-down"></i>
                   <Dropdown array={['All Services', 'Service Details']} open={open1} /> */}
                 </Link>
               </li>
-              <li className="navbar__list--item"><Link aria-label='about' to={'#about'}>About Me</Link></li>
+              <li className="navbar__list--item"><a aria-label='about' href={'#about'}>About Me</a></li>
               <li className="navbar__list--item"
                 onMouseEnter={() => setOpen2(true)}
-                onMouseLeave={() => setOpen2(false)}><Link aria-label='portfolio' to={'#portfolio'}>Portfolio
+                onMouseLeave={() => setOpen2(false)}><a aria-label='portfolio' href={'#portfolio'}>Portfolio
                   {/* <i className="fa-solid fa-caret-down"></i>
                   <Dropdown array={['All Portfolio', 'Portfolio Details']} open={open2} /> */}
-                  </Link></li>
+                  </a></li>
                   <li className="navbar__list--item"
                     onMouseEnter={() => setOpen3(true)}
-                    onMouseLeave={() => setOpen3(false)}><Link aria-label='blog' to={'#blog'}>Blog
+                    onMouseLeave={() => setOpen3(false)}><a aria-label='blog' href={'#blog'}>Blog
                       {/* <i className="fa-solid fa-caret-down"></i>
                       <Dropdown array={['Blog Standard', 'All Blogs', 'Blog Details']} open={open3} /> */}
-                    </Link>
+                    </a>
                   </li>
                 </ul>
                 <div className="navbar__right">

@@ -5,10 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--bg-color-2);
-  scroll-behavior: smooth;
-
+  
 }
 .container {
   max-width: 1436px;

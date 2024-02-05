@@ -23,8 +23,8 @@ function Home() {
             <Typography maxWidth={'582px'}>I’m a Web developer & I’m very passionate and dedicated to my work. I have
               acquired the skills and knowledge necessary to make your project a success.</Typography>
             <div className="home__btns">
-              <Link aria-label='about-page' to={'#about'}><PrimaryBtn text={'About Me'} /></Link>
-              <Link aria-label='portfolio-page' to={'#portfolio'} className='home__btn'>My Works</Link>
+              <a aria-label='about-page' href={'#about'}><PrimaryBtn text={'About Me'} /></a>
+              <a aria-label='portfolio-page' href={'#portfolio'} className='home__btn'>My Works</a>
             </div>
             <div className='home__social'>
               <p>Follow Me</p>
