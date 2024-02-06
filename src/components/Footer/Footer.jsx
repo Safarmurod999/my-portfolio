@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGithubAlt } from "react-icons/fa6";
@@ -8,6 +8,10 @@ import './Footer.scss'
 import TopTitle from '../TopTitle/TopTitle'
 import Title from '../Title/Title'
 const Footer = () => {
+    const [message, setMessage] = useState({ name: '', email: '', textarea: '' })
+    const onChangeHandler = (e) => {
+        setMessage({ ...message, [e.target.name]: e.target.value })
+    }
     return (
         <footer className='footer'>
             <div className="container">
@@ -89,15 +93,16 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer__contact">
-                    <form className="footer__form">
+                    <form className="footer__form" onSubmit={e=>e.preventDefault()}>
                         <div className="footer__form--title">
                             Fill The Form
                         </div>
-                        <input type="text" className='footer__form--input' placeholder='Your Full Name' />
-                        <input type="text" className='footer__form--input' placeholder='Email Address' />
-                        <textarea></textarea>
+                        <input type="text" className='footer__form--input' placeholder='Your Full Name' name='name' value={message.name} onChange={(e) => onChangeHandler(e)} />
+                        <input type="email" className='footer__form--input' placeholder='Email Address' name='email' value={message.email} onChange={(e) => onChangeHandler(e)} />
+                        <textarea name='textarea' value={message.textarea} onChange={(e) => onChangeHandler(e)} ></textarea>
                         <button className='footer__btn' type='submit'>
-                            Send Message</button>
+                            Send Message
+                        </button>
                     </form>
                 </div>
 
