@@ -7,7 +7,7 @@ function DetailsWrapper({array,title}) {
         <ul className='details-list'>
         {
             array.map((el)=>{
-                return <li key={el.id} className='details-item'>
+                return <li key={el.id} className='details-item' data-aos="fade-up">
                     <div className='details-time'>{el.time}</div>
                     <div className='details-data'>
                         <h3>{el.title}</h3>

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 function ServiceCard({ id, title, description, image }) {
     return (
-        <li className='service-card'>
+        <li className='service-card' data-aos="fade-up">
             <div>
-                <h4>0{id+1}/</h4>
+                <h4>0{id + 1}/</h4>
                 <div className='service-card-content'>
                     <span>{title}</span>
                     <p>{description}</p>

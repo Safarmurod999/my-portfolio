@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { Layout, Spinner } from '../components/index'
+import Transition from '../utils/transition';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Services = lazy(() => import('../pages/Services/Services'));
@@ -15,8 +16,9 @@ const routes = [
     }
 ]
 function Router() {
+    const location = useLocation();
     return (
-        <Routes>
+        <Routes location={location} key={location.pathname}>
             <Route path='/' element={<Layout />}>
                 {
                     routes.map((route, index) => {
@@ -25,7 +27,7 @@ function Router() {
                             <Route key={index} index={!route.path && true} path={route.path}
                                 element={
                                     <Suspense fallback={<Spinner position="full" />}>
-                                        <RouteComponent />
+                                        <Transition><RouteComponent /></Transition>
                                     </Suspense>
                                 } />
                         )

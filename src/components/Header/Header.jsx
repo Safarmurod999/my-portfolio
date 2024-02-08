@@ -46,7 +46,7 @@ function Header() {
     <header>
       <nav className={`navbar ${!show && "shrink"}`}>
         <div className="container">
-          <div className="navbar__logo">Urinov<span>.</span></div>
+          <div className="navbar__logo"><Link to={'/'}>Urinov<span>.</span></Link></div>
           <div className={`navbar__menu ${menuOpen ? "open" : ""}`}>
             <ul className="navbar__list">
               <li className="navbar__list--item"><Link aria-label='home' to={'/'}>Home</Link></li>
@@ -63,31 +63,31 @@ function Header() {
                 onMouseLeave={() => setOpen2(false)}><a aria-label='portfolio' href={'#portfolio'}>Portfolio
                   {/* <i className="fa-solid fa-caret-down"></i>
                   <Dropdown array={['All Portfolio', 'Portfolio Details']} open={open2} /> */}
-                  </a></li>
-                  <li className="navbar__list--item"
-                    onMouseEnter={() => setOpen3(true)}
-                    onMouseLeave={() => setOpen3(false)}><a aria-label='blog' href={'#blog'}>Blog
-                      {/* <i className="fa-solid fa-caret-down"></i>
+                </a></li>
+              <li className="navbar__list--item"
+                onMouseEnter={() => setOpen3(true)}
+                onMouseLeave={() => setOpen3(false)}><a aria-label='blog' href={'#blog'}>Blog
+                  {/* <i className="fa-solid fa-caret-down"></i>
                       <Dropdown array={['Blog Standard', 'All Blogs', 'Blog Details']} open={open3} /> */}
-                    </a>
-                  </li>
-                </ul>
-                <div className="navbar__right">
-                  <button aria-label='color-mode' className='color-mode' onClick={() => handleColorMode()}>
-                    <BsSun />
-                  </button>
-                  <PrimaryBtn text={"Contact Me"} />
-                </div>
-              </div>
-              <button aria-label='menu' className="burger" onClick={() => setMenuOpen(!menuOpen)}>
-                {" "}
-                {!menuOpen ? (
-                  <i className="fa-solid fa-bars"></i>
-                ) : (
-                  <i className="fa-solid fa-xmark"></i>
-                )}
+                </a>
+              </li>
+            </ul>
+            <div className="navbar__right">
+              <button aria-label='color-mode' className='color-mode' onClick={() => handleColorMode()}>
+                <BsSun />
               </button>
+              <PrimaryBtn text={"Contact Me"} link={'#footer'}/>
+            </div>
           </div>
+          <button aria-label='menu' className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+            {" "}
+            {!menuOpen ? (
+              <i className="fa-solid fa-bars"></i>
+            ) : (
+              <i className="fa-solid fa-xmark"></i>
+            )}
+          </button>
+        </div>
       </nav>
     </header>
   )

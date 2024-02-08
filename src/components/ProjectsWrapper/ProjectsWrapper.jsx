@@ -5,7 +5,7 @@ function ProjectsWrapper({ array }) {
         <ul className='projects-list'>
             {
                 array.map((el) => {
-                    return <li key={el.id} className='projects-item'>
+                    return <li key={el.id} className='projects-item' data-aos="zoom-in">
                         <img src={el.image} alt={el.image} />
                         <div className='projects-data'>
                             <h3>{el.title}</h3>

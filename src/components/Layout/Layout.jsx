@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { motion } from "framer-motion";
 import { Footer, Header } from '../index'
 import { Outlet } from 'react-router-dom'
 import BackTop from '../BackTop/BackTop';
 function Layout() {
-    MouseFollower.registerGSAP(gsap);
     return (
         <>
             <Header />

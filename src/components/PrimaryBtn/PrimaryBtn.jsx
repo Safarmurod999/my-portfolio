@@ -1,8 +1,12 @@
 import './PrimaryBtn.scss'
 
-function PrimaryBtn({ text }) {
+function PrimaryBtn({ text, link ,ariaLabel}) {
     return (
-        <button className='primary-btn'>{text}</button>
+        <div className='primary-btn'>
+            <a href={link} aria-label={ariaLabel}>
+                {text}
+            </a>
+        </div>
     )
 }
 

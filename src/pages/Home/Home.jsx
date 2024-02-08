@@ -23,8 +23,8 @@ function Home() {
             <Typography maxWidth={'582px'}>I’m a Web developer & I’m very passionate and dedicated to my work. I have
               acquired the skills and knowledge necessary to make your project a success.</Typography>
             <div className="home__btns">
-              <a aria-label='about-page' href={'#about'}><PrimaryBtn text={'About Me'} /></a>
-              <a aria-label='portfolio-page' href={'#portfolio'} className='home__btn'>My Works</a>
+              <PrimaryBtn text={'About Me'} link={'#about'} ariaLabel='about-page' />
+              <a aria-label='portfolio-page' href={'#portfolio'} className='home__btn' link={'#portfolio'}>My Works</a>
             </div>
             <div className='home__social'>
               <p>Follow Me</p>
@@ -45,14 +45,14 @@ function Home() {
       </section >
       <section id='services' className="services">
         <div className="container">
-          <div className="services__content">
+          <div className="services__content" data-aos="fade-right">
             <TopTitle>Services</TopTitle>
             <Title>Services i offer</Title>
             <Typography maxWidth={'640px'}>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis
               augue, id sollicitudin justo tristique ut.</Typography>
             <SecondaryBtn text={"All Services"} link={'/services'} />
           </div>
-          <div className="services__details">
+          <div className="services__details" data-aos="fade-left">
             <ServiceWrapper array={services} />
           </div>
         </div>
@@ -103,7 +103,7 @@ function Home() {
             <TopTitle>My Works Portfolio</TopTitle>
             <Title>My Projects</Title>
           </div>
-          <ProjectsWrapper array={projects}/>
+          <ProjectsWrapper array={projects} />
         </div>
       </section>
     </>

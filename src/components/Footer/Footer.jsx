@@ -13,13 +13,13 @@ const Footer = () => {
         setMessage({ ...message, [e.target.name]: e.target.value })
     }
     return (
-        <footer className='footer'>
+        <footer id='footer' className='footer'>
             <div className="container">
-                <div className="footer__data">
+                <div className="footer__data" data-aos="zoom-out">
                     <TopTitle>CONTACT ME</TopTitle>
                     <Title>Lets Discuss Your Project</Title>
                     <ul className="footer__list">
-                        <li className='footer__list--item'>
+                        <li className='footer__list--item'  data-aos="fade-right">
                             <div>
                                 <svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <desc>
@@ -40,7 +40,7 @@ const Footer = () => {
                                 <h6>+998 93 508 22 61</h6>
                             </div>
                         </li>
-                        <li className='footer__list--item'>
+                        <li className='footer__list--item'   data-aos="fade-right">
                             <div>
                                 <svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <desc>
@@ -61,7 +61,7 @@ const Footer = () => {
                                 <h6>safarmurodurinov@gmail.com</h6>
                             </div>
                         </li>
-                        <li className='footer__list--item'>
+                        <li className='footer__list--item'   data-aos="fade-right">
                             <div>
                                 <svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <desc>
@@ -91,9 +91,9 @@ const Footer = () => {
                         <li><a href="https://www.instagram.com/safarmurod0904"><FaInstagram /></a></li>
                         <li><a href="https://www.linkedin.com/in/safarmurod999/"><FaLinkedinIn /></a></li>
                     </ul>
-                </div>
+                </div>      
                 <div className="footer__contact">
-                    <form className="footer__form" onSubmit={e=>e.preventDefault()}>
+                    <form className="footer__form" onSubmit={e=>e.preventDefault()} data-aos="zoom-out">
                         <div className="footer__form--title">
                             Fill The Form
                         </div>
