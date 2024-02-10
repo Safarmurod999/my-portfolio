@@ -1,0 +1,16 @@
+.service {
+  &__top {
+    padding: 100px 0;
+    margin-bottom: 60px;
+    background-color: var(--bg-color);
+    text-align: center;
+    transition:none;
+  }
+  &__subtitle {
+    font-family: "Mulish", sans-serif;
+    color: var(--text-color);
+    span {
+      color: var(--primary-color);
+    }
+  }
+}

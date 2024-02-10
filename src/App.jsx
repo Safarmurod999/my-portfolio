@@ -4,7 +4,6 @@ import Router from './router/router'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -13,9 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <AnimatePresence>
           <Router />
-        </AnimatePresence>
       </BrowserRouter>
     </>
   )
