@@ -45,7 +45,7 @@ function Home() {
       </section >
       <section id='services' className="services">
         <div className="container">
-          <div className="services__content" data-aos="zoom-in">
+          <div className="services__content">
             <TopTitle>Services</TopTitle>
             <Title>Services i offer</Title>
             <Typography maxWidth={'640px'}>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis
@@ -53,7 +53,7 @@ function Home() {
             <SecondaryBtn text={"All Services"} link={'/services'}/>
           </div>
           <div className="services__details">
-            <ServiceWrapper array={services} animation={"fade-up"}/>
+            <ServiceWrapper array={services}/>
           </div>
         </div>
 

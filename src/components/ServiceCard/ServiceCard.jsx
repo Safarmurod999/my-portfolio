@@ -3,9 +3,9 @@ import './ServiceCard.scss'
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
 
-function ServiceCard({ id, title, description,aos }) {
+function ServiceCard({ id, title, description}) {
     return (
-        <li className='service-card' data-aos={aos}>
+        <li className='service-card'>
             <div>
                 <h4>0{id + 1}/</h4>
                 <div className='service-card-content'>
