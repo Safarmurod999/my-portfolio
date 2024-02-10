@@ -52,11 +52,11 @@ const Footer = () => {
                         </li>
                     </ul>
                     <ul className="footer__links">
-                        <li><a href="https://t.me/UrinovSafarmurod" target='blank'><FaTelegramPlane /></a></li>
-                        <li><a href="https://www.facebook.com/safarmurodurinov"><FaFacebookF /></a></li>
-                        <li><a href="https://www.github.com/Safarmurod999"><FaGithubAlt /></a></li>
-                        <li><a href="https://www.instagram.com/safarmurod0904"><FaInstagram /></a></li>
-                        <li><a href="https://www.linkedin.com/in/safarmurod999/"><FaLinkedinIn /></a></li>
+                        <li><a href="https://t.me/UrinovSafarmurod" target='blank' aria-label='Telegram'><FaTelegramPlane /></a></li>
+                        <li><a href="https://www.facebook.com/safarmurodurinov" aria-label='Facebook'><FaFacebookF /></a></li>
+                        <li><a href="https://www.github.com/Safarmurod999" aria-label='Github'><FaGithubAlt /></a></li>
+                        <li><a href="https://www.instagram.com/safarmurod0904" aria-label='Instagram'><FaInstagram /></a></li>
+                        <li><a href="https://www.linkedin.com/in/safarmurod999/" aria-label='Linkedin'><FaLinkedinIn /></a></li>
                     </ul>
                 </div>
                 <div className="footer__contact">
@@ -66,7 +66,7 @@ const Footer = () => {
                         </div>
                         <input type="text" className='footer__form--input' placeholder='Your Full Name' name='name' value={message.name} onChange={(e) => onChangeHandler(e)} />
                         <input type="email" className='footer__form--input' placeholder='Email Address' name='email' value={message.email} onChange={(e) => onChangeHandler(e)} />
-                        <textarea name='textarea' value={message.textarea} onChange={(e) => onChangeHandler(e)} ></textarea>
+                        <textarea name='textarea' value={message.textarea} onChange={(e) => onChangeHandler(e)} placeholder='You message'></textarea>
                         <button className='footer__btn' type='submit'>
                             Send Message
                         </button>

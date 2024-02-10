@@ -38,7 +38,7 @@ function Home() {
             </div>
           </div>
           <div className="home__image">
-            <img src={me} alt="My picture" />
+            <img src={me} loading='lazy' alt="My picture" />
             <div className="circular"><Circle text={"Download - CV Download - CV "} link={Resume} id={'third'} /></div>
           </div>
         </div >
