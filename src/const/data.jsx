@@ -1,7 +1,7 @@
-import meelonuz from "../assets/images/Projects/meelonuz.png";
-import nisauikit from "../assets/images/Projects/nisauikit.png";
-import najottalim from "../assets/images/Projects/najottalim.png";
-import consultation from "../assets/images/Projects/100yuristov.png";
+import meelonuz from "../assets/images/Projects/meelonuz.webp";
+import nisauikit from "../assets/images/Projects/nisauikit.webp";
+import najottalim from "../assets/images/Projects/najottalim.webp";
+import consultation from "../assets/images/Projects/100yuristov.webp";
 export const services = [
   {
     id: 0,

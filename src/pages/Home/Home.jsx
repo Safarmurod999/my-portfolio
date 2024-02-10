@@ -6,7 +6,7 @@ import { FaGithubAlt } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
-import me from "../../assets/images/Home/me-3.png"
+import me from "../../assets/images/Home/me-3.webp"
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import Circle from '../../components/Circle/Circle';
