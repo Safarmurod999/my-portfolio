@@ -4,7 +4,10 @@
     margin-bottom: 60px;
     background-color: var(--bg-color);
     text-align: center;
-    transition:none;
+    transition: none;
+    @media screen and (max-width: 600px) {
+      padding: 50px;
+    }
   }
   &__subtitle {
     font-family: "Mulish", sans-serif;
