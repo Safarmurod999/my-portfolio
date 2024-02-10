@@ -29,11 +29,11 @@ function Home() {
             <div className='home__social'>
               <p>Follow Me</p>
               <ul className="home__links">
-                <li><a href="https://t.me/UrinovSafarmurod" target='blank'><FaTelegramPlane /></a></li>
-                <li><a href="https://www.facebook.com/safarmurodurinov"><FaFacebookF /></a></li>
-                <li><a href="https://www.github.com/Safarmurod999"><FaGithubAlt /></a></li>
-                <li><a href="https://www.instagram.com/safarmurod0904"><FaInstagram /></a></li>
-                <li><a href="https://www.linkedin.com/in/safarmurod999/"><FaLinkedinIn /></a></li>
+                <li><a href="https://t.me/UrinovSafarmurod" target='blank' aria-label='telegram'><FaTelegramPlane /></a></li>
+                <li><a href="https://www.facebook.com/safarmurodurinov" aria-label='facebook'><FaFacebookF /></a></li>
+                <li><a href="https://www.github.com/Safarmurod999" aria-label='github'><FaGithubAlt /></a></li>
+                <li><a href="https://www.instagram.com/safarmurod0904" aria-label='instagram'><FaInstagram /></a></li>
+                <li><a href="https://www.linkedin.com/in/safarmurod999/" aria-label='linkedin'><FaLinkedinIn /></a></li>
               </ul>
             </div>
           </div>
