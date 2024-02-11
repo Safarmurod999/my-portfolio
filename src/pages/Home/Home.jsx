@@ -12,7 +12,8 @@ import { Link } from 'react-router-dom'
 import Circle from '../../components/Circle/Circle';
 import Resume from '../../assets/files/SafarmurodUrinov.pdf';
 import { services, skills, education, experience, projects } from '../../const/data';
-function Home() {
+
+const Home = () => {
   return (
     <>
       <section id='home' className="home">
@@ -50,10 +51,10 @@ function Home() {
             <Title>Services i offer</Title>
             <Typography maxWidth={'640px'}>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis
               augue, id sollicitudin justo tristique ut.</Typography>
-            <SecondaryBtn text={"All Services"} link={'/services'}/>
+            <SecondaryBtn text={"All Services"} link={'/services'} />
           </div>
           <div className="services__details">
-            <ServiceWrapper array={services}/>
+            <ServiceWrapper array={services} />
           </div>
         </div>
 
@@ -104,6 +105,9 @@ function Home() {
             <Title>My Projects</Title>
           </div>
           <ProjectsWrapper array={projects} />
+        </div>
+        <div className="container">
+          <PrimaryBtn text={"See More"} link={'/portfolio'} />
         </div>
       </section>
     </>

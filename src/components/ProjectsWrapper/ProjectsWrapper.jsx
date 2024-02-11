@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ProjectsWrapper.scss"
-function ProjectsWrapper({ array }) {
+const ProjectsWrapper = ({ array }) => {
     return (
         <ul className='projects-list'>
             {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./BackTop.scss"
-import backtop from "../../assets/icons/backtop.svg"
+
 const BackTop = () => {
     const [showButton, setShowButton] = useState(false);
 

@@ -1,8 +1,9 @@
 import React from 'react'
 import './SecondaryBtn.scss'
-function SecondaryBtn({link,text}) {
+import { Link } from 'react-router-dom'
+const SecondaryBtn = ({link,text}) => {
   return (
-    <a aria-label='page-link' href={link} className='secondary-btn'>{text}</a>
+    <Link aria-label='page-link' to={link} className='secondary-btn'>{text}</Link>
   )
 }
 

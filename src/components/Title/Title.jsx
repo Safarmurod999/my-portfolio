@@ -1,6 +1,6 @@
 import React from 'react'
 import './Title.scss'
-function Title({children}) {
+const Title = ({children}) => {
     return (
         <div className='title'>{children}</div>
     )

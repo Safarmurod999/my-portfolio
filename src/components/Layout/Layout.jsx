@@ -2,7 +2,7 @@ import React from 'react';
 import { Footer, Header } from '../index'
 import { Outlet } from 'react-router-dom'
 import BackTop from '../BackTop/BackTop';
-function Layout() {
+const Layout = () => {
     return (
         <>
             <Header />

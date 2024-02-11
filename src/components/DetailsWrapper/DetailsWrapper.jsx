@@ -1,6 +1,7 @@
 import React from 'react'
 import "./DetailsWrapper.scss"
-function DetailsWrapper({array,title}) {
+
+const DetailsWrapper = ({array,title}) => {
   return (
     <div className="details-wrapper">
         <h2 className="details-title">{title}</h2>

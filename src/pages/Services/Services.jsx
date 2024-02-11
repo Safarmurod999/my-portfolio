@@ -3,7 +3,7 @@ import './Services.scss'
 import { ServiceWrapper, Title } from '../../components'
 import { services } from '../../const/data';
 import { Link } from 'react-router-dom';
-function Services() {
+const Services = () => {
   return (
     <>
       <section className="service__top">

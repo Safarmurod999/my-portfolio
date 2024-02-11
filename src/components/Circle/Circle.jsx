@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { RiDownloadLine } from "react-icons/ri";
 import "./Circle.scss"
-function Circle({ text, link, id }) {
+
+const Circle = ({ text, link, id }) => {
     useEffect(() => {
         let el = document.getElementById(id);
         let texture = el.querySelector(".circle__inner");

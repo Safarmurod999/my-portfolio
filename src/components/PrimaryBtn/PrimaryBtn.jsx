@@ -1,6 +1,6 @@
 import './PrimaryBtn.scss'
 
-function PrimaryBtn({ text, link ,ariaLabel}) {
+const PrimaryBtn = ({ text, link ,ariaLabel}) => {
     return (
         <div className='primary-btn'>
             <a href={link} aria-label={ariaLabel}>

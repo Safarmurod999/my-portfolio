@@ -3,7 +3,7 @@ import './ServiceCard.scss'
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
 
-function ServiceCard({ id, title, description}) {
+const ServiceCard = ({ id, title, description}) => {
     return (
         <li className='service-card'>
             <div>

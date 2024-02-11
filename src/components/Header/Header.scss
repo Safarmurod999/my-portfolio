@@ -81,23 +81,21 @@
       align-items: center;
     }
     &--item {
-      a {
-        position: relative;
-        padding: 10px 23px;
-        color: var(--text-color);
-        font-family: "Syne", sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 27px;
-        text-transform: capitalize;
-        text-align: left;
-        &:hover {
-          color: var(--primary-color);
-        }
-        i {
-          margin-left: 5px;
-        }
+      position: relative;
+      padding: 10px 23px;
+      color: var(--text-color);
+      font-family: "Syne", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 27px;
+      text-transform: capitalize;
+      text-align: left;
+      &:hover {
+        color: var(--primary-color);
+      }
+      i {
+        margin-left: 5px;
       }
     }
   }

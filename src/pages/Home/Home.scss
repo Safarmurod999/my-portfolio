@@ -1,11 +1,8 @@
+@use "../../App.scss" as mixin;
 .home {
   padding: 40px 0 80px;
   .container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 30px;
+    @include mixin.flex(stretch, space-between, row, 30px);
     @media screen and (max-width: 870px) {
       flex-direction: column;
       * {
@@ -43,10 +40,7 @@
     }
   }
   &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    @include mixin.flex(flex-start, center, column);
     @media screen and (max-width: 870px) {
       align-items: center;
     }
@@ -56,6 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mixin.flex;
     img {
       max-width: 600px;
       width: 100%;
@@ -83,11 +78,7 @@
     }
   }
   &__links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    @include mixin.flex(center, flex-start, row, 10px);
     li {
       background-color: var(--lightgray);
       padding: 10px;
@@ -100,9 +91,7 @@
         }
       }
       a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixin.flex;
       }
       svg {
         font-size: 22px;
@@ -152,11 +141,7 @@
     padding: 50px 0;
   }
   .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
+    @include mixin.flex(flex-start, space-between, row, 40px);
     @media screen and (max-width: 1040px) {
       flex-direction: column;
       align-items: center;
@@ -176,11 +161,7 @@
     padding: 50px 0;
   }
   .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 30px;
+    @include mixin.flex(flex-start, space-between, row, 30px);
     @media screen and (max-width: 1090px) {
       flex-direction: column;
       align-items: center;
@@ -229,10 +210,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
     &--item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include mixin.flex(center, center, column, 0);
       text-align: center;
 
       @media screen and (max-width: 470px) {
@@ -321,6 +299,11 @@
   transition: none;
   @media screen and (max-width: 600px) {
     padding: 50px 0;
+  }
+  .primary-btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 150px;
   }
   &__title {
     text-align: center;

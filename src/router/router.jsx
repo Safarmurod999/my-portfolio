@@ -4,6 +4,7 @@ import { Layout, Spinner } from '../components/index'
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Services = lazy(() => import('../pages/Services/Services'));
+const ServiceDetails = lazy(() => import('../pages/Services/ServiceDetails'));
 const routes = [
     {
         path: '/',
@@ -12,9 +13,13 @@ const routes = [
     {
         path: '/services',
         element: Services
+    },
+    {
+        path: '/services/details',
+        element: ServiceDetails
     }
 ]
-function Router() {
+const Router = () => {
     return (
         <Routes>
             <Route path='/' element={<Layout />}>
