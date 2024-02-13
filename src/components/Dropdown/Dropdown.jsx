@@ -6,7 +6,7 @@ const Dropdown = ({ array, open }) => {
         <ul className={`dropdown ${open && 'open'}`}>
             {
                 array.map((el, index) => (
-                    <li className="dropdown-item" key={index}><Link to={el.link}>{el.name}</Link></li>
+                    <li className="dropdown-item" key={index}><Link to={el.link} aria-label='page-link'>{el.name}</Link></li>
                 ))
             }
         </ul>

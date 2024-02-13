@@ -51,7 +51,7 @@ const Home = () => {
             <Title>Services i offer</Title>
             <Typography maxWidth={'640px'}>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis
               augue, id sollicitudin justo tristique ut.</Typography>
-            <SecondaryBtn text={"All Services"} link={'/services'} />
+            <SecondaryBtn text={"All Services"} link={'/services'}/>
           </div>
           <div className="services__details">
             <ServiceWrapper array={services} />

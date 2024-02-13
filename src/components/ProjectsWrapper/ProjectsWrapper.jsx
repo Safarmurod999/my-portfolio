@@ -9,7 +9,7 @@ const ProjectsWrapper = ({ array }) => {
                         <img src={el.image} loading='lazy' alt={el.image} />
                         <div className='projects-data'>
                             <h3>{el.title}</h3>
-                            <a href={el.url}>{el.data}</a>
+                            <a href={el.url} aria-label='page'>{el.data}</a>
                         </div>
                     </li>
                 })
