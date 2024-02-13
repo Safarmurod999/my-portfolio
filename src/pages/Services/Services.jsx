@@ -14,7 +14,7 @@ const Services = () => {
       </section>
       <section className="service">
         <div className="container">
-          <ServiceWrapper array={services} animation={""} />
+          <ServiceWrapper array={services} />
         </div>
       </section>
     </>
