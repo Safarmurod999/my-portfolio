@@ -9,7 +9,7 @@ const Services = () => {
       <section className="service__top">
         <div className="container">
           <Title>Services All</Title>
-          <Link to={'/'} className="service__subtitle" >Home / <span>Services</span></Link>
+          <Link to={'/'} aria-label='home' className="service__subtitle" >Home / <span>Services</span></Link>
         </div>
       </section>
       <section className="service">

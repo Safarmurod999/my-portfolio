@@ -107,7 +107,7 @@ const Home = () => {
           <ProjectsWrapper array={projects} />
         </div>
         <div className="container">
-          <PrimaryBtn text={"See More"} link={'/portfolio'} />
+          <PrimaryBtn text={"See More"} ariaLabel={"portfolio"} link={'/portfolio'} />
         </div>
       </section>
     </>

@@ -12,7 +12,7 @@ const ServiceDetails = () => {
       <section className="service__top">
         <div className="container">
           <Title>Service Details</Title>
-          <Link to={'/'} className="service__subtitle" >
+          <Link to={'/'} aria-label='home' className="service__subtitle" >
             Home /
             <span> Service Details</span>
           </Link>
