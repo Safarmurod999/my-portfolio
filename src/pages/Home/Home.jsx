@@ -25,7 +25,7 @@ const Home = () => {
               acquired the skills and knowledge necessary to make your project a success.</Typography>
             <div className="home__btns">
               <PrimaryBtn text={'About Me'} link={'#about'} ariaLabel='about-page' />
-              <a aria-label='portfolio-page' href={'#portfolio'} className='home__btn' link={'#portfolio'}>My Works</a>
+              <a aria-label='portfolio-page' href={'#portfolio'} className='home__btn'>My Works</a>
             </div>
             <div className='home__social'>
               <p>Follow Me</p>
