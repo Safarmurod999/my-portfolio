@@ -5,6 +5,7 @@ import { Layout, Spinner } from '../components/index'
 const Home = lazy(() => import('../pages/Home/Home'));
 const Services = lazy(() => import('../pages/Services/Services'));
 const ServiceDetails = lazy(() => import('../pages/Services/ServiceDetails'));
+const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio'));
 const routes = [
     {
         path: '/',
@@ -17,6 +18,10 @@ const routes = [
     {
         path: '/services/details',
         element: ServiceDetails
+    },
+    {
+        path: '/portfolio',
+        element: Portfolio
     }
 ]
 const Router = () => {
