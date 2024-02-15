@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Title } from '../../components'
 import { Link } from 'react-router-dom'
 import { services } from "../../const/data"
+import { GoArrowUpRight } from "react-icons/go";
 import "../Services/Services.scss";
 
 const ServiceDetails = () => {
@@ -33,6 +34,166 @@ const ServiceDetails = () => {
               }
             </ul>
 
+          </div>
+          <div className={`service__tab ${active == 0 && "active"}`}>
+            <Title>Website Development</Title>
+            <ul className="service__tab--list">
+              <li className='service__tab--item'>
+                <div>
+                  <h4>01/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>E-commerce website</span>
+                  </div></div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>02/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Landing page</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>03/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Portfolio website</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://www.safarmurod.uz/'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>04/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Educational website</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'http://meelon.uz'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+            </ul>
+          </div>
+          <div className={`service__tab ${active == 1 && "active"}`}>
+            <Title>Telegram Bot Development</Title>
+            <ul className="service__tab--list">
+              <li className='service__tab--item'>
+                <div>
+                  <h4>01/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>E-commerce bot</span>
+                  </div></div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>02/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Subsctiption bot</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>03/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Registration bot</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://www.safarmurod.uz/'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>04/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Editor bot</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'http://meelon.uz'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+            </ul>
+          </div>
+          <div className={`service__tab ${active == 2 && "active"}`}>
+            <Title>Web Apps Development</Title>
+            <ul className="service__tab--list">
+              <li className='service__tab--item'>
+                <div>
+                  <h4>01/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>CRM system</span>
+                  </div></div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>02/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>ERP system</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>03/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>CMS web apps</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://www.safarmurod.uz/'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>04/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Business web apps</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'http://meelon.uz'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+            </ul>
+          </div>
+          <div className={`service__tab ${active == 3 && "active"}`}>
+            <Title>REST API for E-commerce</Title>
+            <ul className="service__tab--list">
+              <li className='service__tab--item'>
+                <div>
+                  <h4>01/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>CRM system backend</span>
+                  </div></div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>02/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Online store backend</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://nisa-ui-kit.netlify.app'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>03/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>CMS web apps backend</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'https://www.safarmurod.uz/'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+              <li className='service__tab--item'>
+                <div>
+                  <h4>04/</h4>
+                  <div className='service__tab--item-content'>
+                    <span>Online ordering backend</span>
+                  </div>
+                </div>
+                <a aria-label='page-link' href={'http://meelon.uz'} className='service__tab--item-icon'><GoArrowUpRight /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

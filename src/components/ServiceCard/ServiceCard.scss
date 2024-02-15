@@ -7,7 +7,9 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 40px;
   margin-bottom: 50px;
+  transition: .3s;
   &:hover {
+    border-color: var(--primary-color);
     .service-card-icon {
       background-color: var(--secondary-color);
     }
