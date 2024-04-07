@@ -83,7 +83,16 @@
     &--item {
       position: relative;
       padding: 10px 23px;
+      a {
+        color: var(--text-color);
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
       color: var(--text-color);
+      &:hover {
+        color: var(--primary-color);
+      }
       font-family: "Syne", sans-serif;
       font-size: 16px;
       font-style: normal;
@@ -91,9 +100,7 @@
       line-height: 27px;
       text-transform: capitalize;
       text-align: left;
-      &:hover {
-        color: var(--primary-color);
-      }
+
       i {
         margin-left: 5px;
       }
