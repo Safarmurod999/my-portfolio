@@ -10,7 +10,7 @@ import me from "../../assets/images/Home/me-3.webp"
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import Circle from '../../components/Circle/Circle';
-import Resume from '../../assets/files/SafarmurodUrinov.pdf';
+import Resume from '../../assets/files/safarmurod-cv.pdf';
 import { services, skills, education, experience, projects } from '../../const/data';
 
 const Home = () => {

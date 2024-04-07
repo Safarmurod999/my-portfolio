@@ -2,6 +2,8 @@ import meelonuz from "../assets/images/Projects/meelonuz.webp";
 import nisauikit from "../assets/images/Projects/nisauikit.webp";
 import najottalim from "../assets/images/Projects/najottalim.webp";
 import consultation from "../assets/images/Projects/100yuristov.webp";
+import simply from "../assets/images/Projects/simply.webp";
+import matras from "../assets/images/Projects/matras.webp"
 export const services = [
   {
     id: 0,
@@ -129,20 +131,34 @@ export const projects = [
   },
   {
     id: 1,
+    image: simply,
+    title: "Frontend programming",
+    data: "SimplyTourIt.com",
+    url: "https://simplytourit-com.vercel.app/",
+  },
+  {
+    id: 2,
+    image: matras,
+    title: "Frontend programming",
+    data: "DreamCloud.uz",
+    url: "https://dream-cloud-matras.netlify.app/",
+  },
+  {
+    id: 3,
     image: nisauikit,
     title: "Frontend programming",
     data: "Nisa UI Kit",
     url: "https://nisa-ui-kit.netlify.app",
   },
   {
-    id: 2,
+    id: 4,
     image: najottalim,
     title: "Frontend programming",
     data: "Najot Ta'lim Clone",
     url: "https://front-end-sm.netlify.app",
   },
   {
-    id: 3,
+    id: 5,
     image: consultation,
     title: "Frontend programming",
     data: "100 Yuristov",
