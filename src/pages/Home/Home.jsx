@@ -65,8 +65,8 @@ const Home = () => {
             <TopTitle>I am a web developer</TopTitle>
             <Title>About Me</Title>
             <Typography maxWidth={'581px'} color={'var(--text-light-color)'} fontWeight='400'>
-              My name is Safarmurod. I have been studying UI UX Design since October 2020. I like
-              creating a cool design project.
+              My name is Safarmurod. I have been studying Full stack development since November 2022. I like
+              creating a cool full stack projects.
             </Typography>
             <Typography maxWidth={'630px'} color={'var(--text-light-color)'} fontWeight='400'>
               Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare

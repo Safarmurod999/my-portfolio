@@ -76,7 +76,7 @@ export const skills = [
   {
     id: 9,
     icon: "devicon-nestjs-plain",
-    name: "HTML5",
+    name: "nestjs",
   },
 ];
 
