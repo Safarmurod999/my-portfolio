@@ -8,10 +8,12 @@
   }
 }
 .projects-item {
+  width: 100%;
   margin: 0 auto;
   img {
     width: 100%;
-    max-height: 316px;
+    max-height: 315px;
+    min-height: 315px;
     border-radius: 15px;
     border: 1px solid var(--lightgray);
   }

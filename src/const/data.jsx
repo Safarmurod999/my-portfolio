@@ -1,3 +1,8 @@
+import derek from "../assets/images/Projects/derek.png";
+import oydin from "../assets/images/Projects/oydin.png";
+import flex from "../assets/images/Projects/flex-binom.png"
+import nftico from "../assets/images/Projects/nftico.png";
+
 import meelonuz from "../assets/images/Projects/meelonuz.webp";
 import nisauikit from "../assets/images/Projects/nisauikit.webp";
 import najottalim from "../assets/images/Projects/najottalim.webp";
@@ -124,41 +129,71 @@ export const experience = [
 export const projects = [
   {
     id: 0,
+    image: derek,
+    title: "Frontend programming",
+    data: "Derek.uz",
+    url: "https://derek-uz.vercel.app/",
+  }
+  ,
+  {
+    id: 1,
+    image: oydin,
+    title: "Frontend programming",
+    data: "OydinElektrik.uz",
+    url: "https://oydin-electric.vercel.app/catalog",
+  }
+  ,
+  {
+    id: 2,
+    image: nftico,
+    title: "Frontend programmer",
+    data: "Nftico",
+    url: "https://nftico.vercel.app/",
+  },
+  {
+    id: 3,
+    image: flex,
+    title: "Frontend programmer",
+    data: "Flex.uz",
+    url: "https://flex-binom-safarmurod.netlify.app/",
+  },
+  {
+    id: 4,
     image: meelonuz,
     title: "Frontend programming",
     data: "Meelon.uz",
     url: "http://meelon.uz",
   },
   {
-    id: 1,
+    id: 5,
     image: simply,
     title: "Frontend programming",
     data: "SimplyTourIt.com",
     url: "https://simplytourit-com.vercel.app/",
   },
   {
-    id: 2,
+    id: 6,
     image: matras,
     title: "Frontend programming",
     data: "DreamCloud.uz",
     url: "https://dream-cloud-matras.netlify.app/",
   },
   {
-    id: 3,
+    id: 7,
     image: nisauikit,
     title: "Frontend programming",
     data: "Nisa UI Kit",
     url: "https://nisa-ui-kit.netlify.app",
   },
   {
-    id: 4,
+    id: 8,
     image: najottalim,
     title: "Frontend programming",
     data: "Najot Ta'lim Clone",
     url: "https://front-end-sm.netlify.app",
   },
   {
-    id: 5,
+    id: 9,
     image: consultation,
     title: "Frontend programming",
     data: "100 Yuristov",
