@@ -5,7 +5,7 @@ const ProjectsWrapper = ({ array }) => {
         <ul className='projects-list'>
             {
                 array.map((el) => {
-                    if (el.id < 6) {
+                    if (el.id < 7) {
 
                         return <li key={el.id} className='projects-item'>
                             <img src={el.image} loading='lazy' alt={el.image} />

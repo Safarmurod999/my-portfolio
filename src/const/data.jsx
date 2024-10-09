@@ -127,14 +127,14 @@ export const experience = [
 ];
 
 export const projects = [
-  {
-    id: 0,
-    image: derek,
-    title: "Frontend programming",
-    data: "Derek.uz",
-    url: "https://derek-uz.vercel.app/",
-  }
-  ,
+  // {
+  //   id: 0,
+  //   image: derek,
+  //   title: "Frontend programming",
+  //   data: "Derek.uz",
+  //   url: "https://derek-uz.vercel.app/",
+  // }
+  // ,
   {
     id: 1,
     image: oydin,
